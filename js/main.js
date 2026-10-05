@@ -66,6 +66,19 @@
     }
   });
 
+  /* ---------- entrada em cascata dos blocos de cada grupo ---------- */
+  /* o atraso vai por animation-delay (via --reveal-delay), então não
+     interfere no transition de :hover dos cards */
+  if (!reduced) {
+    $$(".services, .projects, .steps, .testimonials").forEach((group) => {
+      [...group.children].forEach((child, i) => {
+        if (child.hasAttribute("data-reveal")) {
+          child.style.setProperty("--reveal-delay", i * 90 + "ms");
+        }
+      });
+    });
+  }
+
   /* ---------- reveal on scroll ---------- */
   const io = new IntersectionObserver(
     (entries) => {
