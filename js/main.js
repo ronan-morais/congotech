@@ -5,11 +5,49 @@
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---------- portfólio: cards gerados a partir de js/projects.js ---------- */
+  const grid = $("#projectsGrid");
+  if (grid && window.PROJECTS) {
+    window.PROJECTS.forEach((p) => {
+      const card = document.createElement("a");
+      card.className = "project reveal";
+      card.dataset.reveal = "";
+      card.href = "projeto.html?p=" + encodeURIComponent(p.slug);
+
+      const cover = document.createElement("div");
+      cover.className = "project__cover";
+      const img = document.createElement("img");
+      img.src = p.images[0];
+      img.alt = p.title + " — " + p.type;
+      img.loading = "lazy";
+      cover.appendChild(img);
+
+      const body = document.createElement("div");
+      body.className = "project__body";
+      const cat = document.createElement("span");
+      cat.className = "project__cat";
+      cat.textContent = p.category;
+      const title = document.createElement("h3");
+      title.textContent = p.title;
+      const tag = document.createElement("span");
+      tag.className = "project__tag";
+      tag.textContent = window.projectTag(p);
+
+      body.append(cat, title, tag);
+      card.append(cover, body);
+      grid.appendChild(card);
+    });
+  }
+
   /* ---------- ícones lucide (paths oficiais) ---------- */
   const ICONS = {
     zap: '<path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>',
     "arrow-up-right": '<path d="M7 7h10v10"/><path d="M7 17 17 7"/>',
     "arrow-right": '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+    "arrow-left": '<path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>',
+    x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+    "chevron-left": '<path d="m15 18-6-6 6-6"/>',
+    "chevron-right": '<path d="m9 18 6-6-6-6"/>',
     palette: '<circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>',
     code: '<path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>',
     megaphone: '<path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/>',

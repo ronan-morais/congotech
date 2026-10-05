@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto — CongoTech</title>
+  <meta name="description" content="Projeto da CongoTech — agência criativa de design, web e marketing em Congonhas, MG." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23FF5A1F'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='%230B0E14' font-family='Arial' font-weight='bold'>C</text></svg>" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html#top" class="logo" aria-label="CongoTech">
+        <span class="logo__mark"><i data-icon="zap"></i></span>
+        <span class="logo__word">Congo<span>Tech</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#portfolio">Portfólio</a>
+        <a href="index.html#processo">Processo</a>
+        <a href="index.html#sobre">Sobre</a>
+      </nav>
+
+      <a href="index.html#contato" class="btn btn--accent nav-cta">
+        Fale conosco <i data-icon="arrow-up-right"></i>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+  </header>
+
+  <main id="top">
+    <div class="page">
+
+    <!-- ========== DETALHES DO PROJETO ========== -->
+    <article class="detail" id="detailRoot">
+      <a class="detail__back" href="index.html#portfolio">
+        <i data-icon="arrow-left"></i> Voltar ao portfólio
+      </a>
+
+      <header class="detail__head">
+        <span class="kicker" id="detailCategory"></span>
+        <h1 id="detailTitle"></h1>
+        <p class="detail__type" id="detailType"></p>
+      </header>
+
+      <div class="detail__body">
+        <aside class="detail__aside">
+          <h2 class="detail__subtitle">O que foi feito</h2>
+          <ul class="detail__services" id="detailServices"></ul>
+          <a href="index.html#contato" class="btn btn--accent btn--lg">
+            Solicitar orçamento <i data-icon="arrow-right"></i>
+          </a>
+        </aside>
+
+        <div class="detail__gallery" id="detailGallery"></div>
+      </div>
+    </article>
+
+    </div><!-- /.page -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html#top" class="logo">
+            <span class="logo__mark"><i data-icon="zap"></i></span>
+            <span class="logo__word">Congo<span>Tech</span></span>
+          </a>
+          <p>Agência de design gráfico, desenvolvimento web e marketing digital em Congonhas — MG.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram"><i data-icon="instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i data-icon="facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-icon="linkedin"></i></a>
+            <a href="#" aria-label="WhatsApp"><i data-icon="message-circle"></i></a>
+          </div>
+        </div>
+
+        <nav class="footer__col">
+          <h4>SERVIÇOS</h4>
+          <a href="index.html#servicos">Design gráfico</a>
+          <a href="index.html#servicos">Websites e lojas</a>
+          <a href="index.html#servicos">Aplicativos e sistemas</a>
+          <a href="index.html#servicos">Marketing digital</a>
+          <a href="index.html#servicos">Robôs de atendimento</a>
+        </nav>
+
+        <nav class="footer__col">
+          <h4>AGÊNCIA</h4>
+          <a href="index.html#sobre">Sobre a CongoTech</a>
+          <a href="index.html#portfolio">Portfólio</a>
+          <a href="index.html#processo">Processo</a>
+          <a href="index.html#contato">Contato</a>
+          <a href="index.html#contato">Trabalhe com a gente</a>
+        </nav>
+      </div>
+
+      <hr class="footer__divider" />
+
+      <div class="footer__bottom">
+        <span>© 2025 CongoTech. Todos os direitos reservados.</span>
+        <span>Feito com orgulho em Congonhas, MG</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ========== LIGHTBOX DA GALERIA ========== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galeria do projeto" hidden>
+    <img class="lightbox__img" id="lightboxImg" alt="" />
+    <button type="button" class="lightbox__btn lightbox__close" aria-label="Fechar"><i data-icon="x"></i></button>
+    <button type="button" class="lightbox__btn lightbox__prev" aria-label="Imagem anterior"><i data-icon="chevron-left"></i></button>
+    <button type="button" class="lightbox__btn lightbox__next" aria-label="Próxima imagem"><i data-icon="chevron-right"></i></button>
+    <span class="lightbox__count" id="lightboxCount"></span>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/projeto.js"></script>
+</body>
+</html>
