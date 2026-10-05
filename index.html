@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CongoTech — Agência criativa em Congonhas, MG</title>
+  <meta name="description" content="Agência de design gráfico, desenvolvimento web e marketing digital em Congonhas — MG. Marcas que nascem prontas para crescer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23FF5A1F'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='%230B0E14' font-family='Arial' font-weight='bold'>C</text></svg>" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#top" class="logo" aria-label="CongoTech">
+        <span class="logo__mark"><i data-icon="zap"></i></span>
+        <span class="logo__word">Congo<span>Tech</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#processo">Processo</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+
+      <a href="#contato" class="btn btn--accent nav-cta">
+        Fale conosco <i data-icon="arrow-up-right"></i>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+  </header>
+
+  <main id="top">
+    <div class="page">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="hero__copy">
+        <div class="eyebrow reveal" data-reveal>
+          <span class="eyebrow__dot"></span>
+          AGÊNCIA CRIATIVA · CONGONHAS, MG
+        </div>
+
+        <h1 class="hero__headline">
+          <span class="line"><span class="word">Marcas que nascem</span></span>
+          <span class="line"><span class="word">prontas para crescer.</span></span>
+        </h1>
+
+        <p class="hero__subhead reveal" data-reveal>
+          Unimos design gráfico, desenvolvimento web e marketing digital para
+          construir a presença da sua empresa — do logo ao sistema.
+        </p>
+
+        <div class="hero__actions reveal" data-reveal>
+          <a href="#contato" class="btn btn--accent btn--lg">
+            Solicitar orçamento <i data-icon="arrow-right"></i>
+          </a>
+          <a href="#servicos" class="btn btn--soft btn--lg">Ver serviços</a>
+        </div>
+
+        <div class="hero__trust reveal" data-reveal>
+          <span class="hero__rule"></span>
+          +120 projetos entregues para empresas de todo o Brasil
+        </div>
+      </div>
+
+      <div class="hero__visual reveal" data-reveal>
+        <div class="hero__image" data-parallax>
+          <img
+            src="https://images.unsplash.com/photo-1776156629696-84c4d5238834?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwODc3MjR8&ixlib=rb-4.1.0&q=80&w=1080"
+            alt="Equipe criativa da CongoTech trabalhando" loading="eager" />
+        </div>
+        <div class="hero__badge">
+          <i data-icon="sparkles"></i> Design · Código · Estratégia
+        </div>
+        <div class="hero__stat">
+          <b class="count" data-count="98" data-suffix="%">0%</b>
+          <span>dos clientes renovam o contrato com a gente</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVIÇOS ========== -->
+    <section class="section section--paper" id="servicos">
+      <header class="section-head reveal" data-reveal>
+        <span class="kicker">O QUE FAZEMOS</span>
+        <h2>Três frentes, um só time.</h2>
+        <p>Design, tecnologia e estratégia trabalhando juntos para a sua marca aparecer do jeito certo.</p>
+      </header>
+
+      <div class="services">
+        <article class="service reveal" data-reveal>
+          <span class="service__icon"><i data-icon="palette"></i></span>
+          <h3>Design Gráfico</h3>
+          <p>Identidade visual completa e todo o material impresso que a sua marca precisa para ser reconhecida.</p>
+          <ul class="check-list">
+            <li><i data-icon="check"></i> Marcas gráficas</li>
+            <li><i data-icon="check"></i> Identidades visuais</li>
+            <li><i data-icon="check"></i> Papelaria impressa</li>
+            <li><i data-icon="check"></i> Panfletos e adesivos</li>
+          </ul>
+        </article>
+
+        <article class="service reveal" data-reveal>
+          <span class="service__icon"><i data-icon="code"></i></span>
+          <h3>Web &amp; Aplicativos</h3>
+          <p>Sites, lojas e sistemas sob medida — rápidos, responsivos e prontos para escalar com o seu negócio.</p>
+          <ul class="check-list">
+            <li><i data-icon="check"></i> Criação de websites</li>
+            <li><i data-icon="check"></i> Sites de lançamento</li>
+            <li><i data-icon="check"></i> Lojas virtuais</li>
+            <li><i data-icon="check"></i> Aplicativos e sistemas</li>
+          </ul>
+        </article>
+
+        <article class="service reveal" data-reveal>
+          <span class="service__icon"><i data-icon="megaphone"></i></span>
+          <h3>Marketing Digital</h3>
+          <p>Presença constante nas redes e atendimento automático para nunca deixar um cliente sem resposta.</p>
+          <ul class="check-list">
+            <li><i data-icon="check"></i> Gerenciamento de redes</li>
+            <li><i data-icon="check"></i> Robôs de atendimento</li>
+            <li><i data-icon="check"></i> Campanhas e tráfego</li>
+            <li><i data-icon="check"></i> Produção de conteúdo</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== PORTFÓLIO ========== -->
+    <section class="section section--ink" id="portfolio">
+      <header class="section-head section-head--row reveal" data-reveal>
+        <div>
+          <span class="kicker">PROJETOS EM DESTAQUE</span>
+          <h2>Trabalhos que já estão na rua.</h2>
+        </div>
+        <a href="#portfolio" class="link-all">Ver todos os projetos <i data-icon="arrow-up-right"></i></a>
+      </header>
+
+      <div class="projects">
+        <article class="project reveal" data-reveal>
+          <div class="project__cover project__cover--padaria"></div>
+          <div class="project__body">
+            <span class="project__cat">IDENTIDADE VISUAL</span>
+            <h3>Padaria Pão de Minas</h3>
+            <span class="project__tag">Marca + Papelaria</span>
+          </div>
+        </article>
+
+        <article class="project reveal" data-reveal>
+          <div class="project__cover">
+            <img src="https://images.unsplash.com/photo-1645848977702-69fa784ea954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwODc3NTB8&ixlib=rb-4.1.0&q=80&w=1080" alt="Verde Vivo Cosméticos" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <span class="project__cat">LOJA VIRTUAL</span>
+            <h3>Verde Vivo Cosméticos</h3>
+            <span class="project__tag">E-commerce</span>
+          </div>
+        </article>
+
+        <article class="project reveal" data-reveal>
+          <div class="project__cover">
+            <img src="https://images.unsplash.com/photo-1618680551746-83925d89838b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwODc3NTB8&ixlib=rb-4.1.0&q=80&w=1080" alt="MoveCongonhas" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <span class="project__cat">APLICATIVO</span>
+            <h3>MoveCongonhas</h3>
+            <span class="project__tag">App + Sistema</span>
+          </div>
+        </article>
+
+        <article class="project reveal" data-reveal>
+          <div class="project__cover">
+            <img src="https://images.unsplash.com/photo-1655388333786-6b8270e2e154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwODc3NDl8&ixlib=rb-4.1.0&q=80&w=1080" alt="Studio Bella" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <span class="project__cat">MARKETING DIGITAL</span>
+            <h3>Studio Bella</h3>
+            <span class="project__tag">Redes sociais</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== PROCESSO ========== -->
+    <section class="section section--paper" id="processo">
+      <header class="section-head reveal" data-reveal>
+        <span class="kicker">COMO TRABALHAMOS</span>
+        <h2>Do briefing à entrega, sem enrolação.</h2>
+      </header>
+
+      <div class="steps">
+        <article class="step reveal" data-reveal>
+          <span class="step__num">01</span>
+          <h3>Diagnóstico</h3>
+          <p>Entendemos o negócio, o público e os objetivos antes de desenhar qualquer coisa.</p>
+        </article>
+        <article class="step reveal" data-reveal>
+          <span class="step__num">02</span>
+          <h3>Criação</h3>
+          <p>Desenvolvemos identidade, layout e estratégia com foco total no resultado.</p>
+        </article>
+        <article class="step reveal" data-reveal>
+          <span class="step__num">03</span>
+          <h3>Produção</h3>
+          <p>Codificamos, imprimimos e publicamos tudo com acabamento profissional.</p>
+        </article>
+        <article class="step reveal" data-reveal>
+          <span class="step__num">04</span>
+          <h3>Crescimento</h3>
+          <p>Acompanhamos métricas, otimizamos e escalamos o que realmente funciona.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== DEPOIMENTOS ========== -->
+    <section class="section section--surface" id="sobre">
+      <header class="section-head reveal" data-reveal>
+        <span class="kicker">DEPOIMENTOS</span>
+        <h2>Quem trabalha com a gente, indica.</h2>
+      </header>
+
+      <div class="testimonials">
+        <article class="quote reveal" data-reveal>
+          <div class="quote__stars" aria-label="5 estrelas">
+            <i data-icon="star"></i><i data-icon="star"></i><i data-icon="star"></i><i data-icon="star"></i><i data-icon="star"></i>
+          </div>
+          <blockquote>"A CongoTech refez a nossa marca e criou a loja virtual. Em três meses as vendas online já passaram do faturamento da loja física."</blockquote>
+          <hr />
+          <div class="quote__author">
+            <span class="quote__avatar">MA</span>
+            <span class="quote__who">
+              <b>Marina Alves</b>
+              <small>Verde Vivo Cosméticos</small>
+            </span>
+          </div>
+        </article>
+
+        <article class="quote reveal" data-reveal>
+          <div class="quote__stars" aria-label="5 estrelas">
+            <i data-icon="star"></i><i data-icon="star"></i><i data-icon="star"></i><i data-icon="star"></i><i data-icon="star"></i>
+          </div>
+          <blockquote>"Nosso site ficou rápido, bonito e o robô de atendimento responde quase tudo sozinho. Ganhamos tempo de verdade."</blockquote>
+          <hr />
+          <div class="quote__author">
+            <span class="quote__avatar">RS</span>
+            <span class="quote__who">
+              <b>Rafael Souza</b>
+              <small>MoveCongonhas</small>
+            </span>
+          </div>
+        </article>
+
+        <article class="quote reveal" data-reveal>
+          <div class="quote__stars" aria-label="5 estrelas">
+            <i data-icon="star"></i><i data-icon="star"></i><i data-icon="star"></i><i data-icon="star"></i><i data-icon="star"></i>
+          </div>
+          <blockquote>"Identidade, redes sociais e material impresso na mesma qualidade. Hoje a marca é reconhecida na cidade inteira."</blockquote>
+          <hr />
+          <div class="quote__author">
+            <span class="quote__avatar">JP</span>
+            <span class="quote__who">
+              <b>Juliana Prado</b>
+              <small>Padaria Pão de Minas</small>
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="section section--surface cta" id="contato">
+      <div class="cta__panel reveal" data-reveal>
+        <div class="cta__copy">
+          <span class="kicker kicker--on-accent">VAMOS COMEÇAR</span>
+          <h2>Vamos tirar a sua ideia do papel.</h2>
+          <p>Conte o que você precisa e receba uma proposta clara, com prazo e valor, em até 24 horas.</p>
+          <div class="cta__actions">
+            <a href="https://wa.me/5531999990000" class="btn btn--ink btn--lg">
+              <i data-icon="message-circle"></i> Falar no WhatsApp
+            </a>
+            <a href="mailto:contato@congotech.com.br" class="btn btn--outline-accent btn--lg">Enviar e-mail</a>
+          </div>
+        </div>
+
+        <ul class="cta__info">
+          <li><i data-icon="phone"></i> +55 (31) 99999-0000</li>
+          <li><i data-icon="mail"></i> contato@congotech.com.br</li>
+          <li><i data-icon="map-pin"></i> Congonhas — Minas Gerais, Brasil</li>
+          <li><i data-icon="calendar"></i> Seg a Sex, 8h às 18h</li>
+        </ul>
+      </div>
+    </section>
+
+    </div><!-- /.page -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#top" class="logo">
+            <span class="logo__mark"><i data-icon="zap"></i></span>
+            <span class="logo__word">Congo<span>Tech</span></span>
+          </a>
+          <p>Agência de design gráfico, desenvolvimento web e marketing digital em Congonhas — MG.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram"><i data-icon="instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i data-icon="facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-icon="linkedin"></i></a>
+            <a href="#" aria-label="WhatsApp"><i data-icon="message-circle"></i></a>
+          </div>
+        </div>
+
+        <nav class="footer__col">
+          <h4>SERVIÇOS</h4>
+          <a href="#servicos">Design gráfico</a>
+          <a href="#servicos">Websites e lojas</a>
+          <a href="#servicos">Aplicativos e sistemas</a>
+          <a href="#servicos">Marketing digital</a>
+          <a href="#servicos">Robôs de atendimento</a>
+        </nav>
+
+        <nav class="footer__col">
+          <h4>AGÊNCIA</h4>
+          <a href="#sobre">Sobre a CongoTech</a>
+          <a href="#portfolio">Portfólio</a>
+          <a href="#processo">Processo</a>
+          <a href="#contato">Contato</a>
+          <a href="#contato">Trabalhe com a gente</a>
+        </nav>
+      </div>
+
+      <hr class="footer__divider" />
+
+      <div class="footer__bottom">
+        <span>© 2025 CongoTech. Todos os direitos reservados.</span>
+        <span>Feito com orgulho em Congonhas, MG</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
