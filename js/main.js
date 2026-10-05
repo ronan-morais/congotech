@@ -5,40 +5,6 @@
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---------- portfólio: cards gerados a partir de js/projects.js ---------- */
-  const grid = $("#projectsGrid");
-  if (grid && window.PROJECTS) {
-    window.PROJECTS.forEach((p) => {
-      const card = document.createElement("a");
-      card.className = "project reveal";
-      card.dataset.reveal = "";
-      card.href = "projeto.html?p=" + encodeURIComponent(p.slug);
-
-      const cover = document.createElement("div");
-      cover.className = "project__cover";
-      const img = document.createElement("img");
-      img.src = p.images[0];
-      img.alt = p.title + " — " + p.type;
-      img.loading = "lazy";
-      cover.appendChild(img);
-
-      const body = document.createElement("div");
-      body.className = "project__body";
-      const cat = document.createElement("span");
-      cat.className = "project__cat";
-      cat.textContent = p.category;
-      const title = document.createElement("h3");
-      title.textContent = p.title;
-      const tag = document.createElement("span");
-      tag.className = "project__tag";
-      tag.textContent = window.projectTag(p);
-
-      body.append(cat, title, tag);
-      card.append(cover, body);
-      grid.appendChild(card);
-    });
-  }
-
   /* ---------- ícones lucide (paths oficiais) ---------- */
   const ICONS = {
     zap: '<path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>',

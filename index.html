@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.classList.add("js");</script>
   <title>CongoTech — Agência criativa em Congonhas, MG</title>
   <meta name="description" content="Agência de design gráfico, desenvolvimento web e marketing digital em Congonhas — MG. Marcas que nascem prontas para crescer." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=fed7ea44" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23FF5A1F'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='%230B0E14' font-family='Arial' font-weight='bold'>C</text></svg>" />
 </head>
 <body>
@@ -146,7 +147,70 @@
         <a href="#portfolio" class="link-all">Ver todos os projetos <i data-icon="arrow-up-right"></i></a>
       </header>
 
-      <div class="projects" id="projectsGrid"></div>
+      <div class="projects" id="projectsGrid">
+<!-- portfolio:start -->
+        <a class="project reveal" data-reveal href="projeto.html?p=ticket-pra-ja">
+          <div class="project__cover">
+            <img src="assets/works/ticket-pra-ja/01.jpg" alt="Ticket pra Já — Gestão de vendas de ingressos" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <span class="project__cat">GESTÃO DE VENDAS DE INGRESSOS</span>
+            <h3>Ticket pra Já</h3>
+            <span class="project__tag">Branding · UX/UI · Front-end · 2023</span>
+          </div>
+        </a>
+        <a class="project reveal" data-reveal href="projeto.html?p=vidalcred">
+          <div class="project__cover">
+            <img src="assets/works/vidalcred/01.jpg" alt="VidalCred — Crédito pessoal" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <span class="project__cat">CRÉDITO PESSOAL</span>
+            <h3>VidalCred</h3>
+            <span class="project__tag">Branding · Redes sociais · Impressos · Website · 2021</span>
+          </div>
+        </a>
+        <a class="project reveal" data-reveal href="projeto.html?p=solar-da-lagoa">
+          <div class="project__cover">
+            <img src="assets/works/solar-da-lagoa/01.jpg" alt="Solar da Lagoa — Casa de repouso para idosos" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <span class="project__cat">CASA DE REPOUSO PARA IDOSOS</span>
+            <h3>Solar da Lagoa</h3>
+            <span class="project__tag">Branding · Website · Impressos · 2015</span>
+          </div>
+        </a>
+        <a class="project reveal" data-reveal href="projeto.html?p=fiat-chrysler">
+          <div class="project__cover">
+            <img src="assets/works/fiat-chrysler/01.jpg" alt="Fiat Chrysler — O sétimo maior fabricante de automóveis do mundo" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <span class="project__cat">PROGRAMA DE ESTÁGIO</span>
+            <h3>Fiat Chrysler</h3>
+            <span class="project__tag">Website · Newsletter · Impressos · 2012</span>
+          </div>
+        </a>
+        <a class="project reveal" data-reveal href="projeto.html?p=girimunho">
+          <div class="project__cover">
+            <img src="assets/works/girimunho/01.jpg" alt="Girimunho — Filme independente premiado em festivais internacionais" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <span class="project__cat">FILME INDEPENDENTE</span>
+            <h3>Girimunho</h3>
+            <span class="project__tag">Website · 2012</span>
+          </div>
+        </a>
+        <a class="project reveal" data-reveal href="projeto.html?p=seminario-engenharia">
+          <div class="project__cover">
+            <img src="assets/works/seminario-engenharia/01.jpg" alt="Seminário de Engenharia — Universidade Federal de Minas Gerais — UFMG" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <span class="project__cat">UNIVERSIDADE FEDERAL DE MINAS GERAIS</span>
+            <h3>Seminário de Engenharia</h3>
+            <span class="project__tag">Impressos · Newsletter · 2011</span>
+          </div>
+        </a>
+<!-- portfolio:end -->
+      </div>
     </section>
 
     <!-- ========== PROCESSO ========== -->
@@ -306,7 +370,6 @@
     </footer>
   </main>
 
-  <script src="js/projects.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=6520d44c"></script>
 </body>
 </html>
