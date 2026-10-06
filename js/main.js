@@ -59,11 +59,10 @@
     burger.setAttribute("aria-expanded", String(open));
   });
   navLinks.addEventListener("click", (e) => {
-    if (e.target.tagName === "A") {
-      navLinks.classList.remove("open");
-      burger.classList.remove("open");
-      burger.setAttribute("aria-expanded", "false");
-    }
+    if (!e.target.closest("a")) return;
+    navLinks.classList.remove("open");
+    burger.classList.remove("open");
+    burger.setAttribute("aria-expanded", "false");
   });
 
   /* ---------- entrada em cascata dos blocos de cada grupo ---------- */

@@ -203,6 +203,9 @@ html.js .section-head.reveal { --reveal-y: 22px; }
 .nav-links a:hover { color: var(--on-dark); }
 .nav-links a:hover::after { transform: scaleX(1); }
 
+/* opções de contato: existem só no menu do responsivo (mobile) */
+.nav-contact { display: none; }
+
 .burger {
   display: none;
   flex-direction: column;
@@ -785,6 +788,35 @@ section[id] { scroll-margin-top: calc(var(--nav-h) + 8px); }
   .nav-links a { padding: 12px 4px; font-size: 16px; }
   .nav-cta { display: none; }
   .burger { display: flex; }
+
+  /* contato dentro do menu mobile */
+  .nav-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 16px;
+    padding-top: 18px;
+    border-top: 1px solid var(--ink-line);
+  }
+  .nav-contact__label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: var(--muted-dark);
+    padding: 0 4px 8px;
+  }
+  .nav-links .nav-contact a {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 11px 4px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--on-dark);
+  }
+  .nav-links .nav-contact a:hover { color: var(--accent); }
+  .nav-contact a::after { content: none; }
+  .nav-contact i { width: 18px; height: 18px; flex: none; color: var(--accent); }
 
   .hero { padding-top: calc(var(--nav-h) + 44px); padding-bottom: 64px; gap: 44px; }
   .hero__headline { font-size: clamp(34px, 10vw, 48px); letter-spacing: -1.4px; }
